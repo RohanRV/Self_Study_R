@@ -1,0 +1,46 @@
+  899   /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52847 -- /Users/rohanrv/Downloads/HTML/num.py 
+  900   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52893 -- /Users/rohanrv/Downloads/HTML/num.py 
+  901   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52914 -- /Users/rohanrv/Downloads/HTML/num.py 
+  902   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52933 -- /Users/rohanrv/Downloads/HTML/num.py 
+  903   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52946 -- /Users/rohanrv/Downloads/HTML/num.py 
+  904   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52973 -- /Users/rohanrv/Downloads/HTML/num.py 
+  905   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 53190 -- /Users/rohanrv/Downloads/HTML/work.py 
+  906   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 53207 -- /Users/rohanrv/Downloads/HTML/work.py 
+  907   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 53276 -- /Users/rohanrv/Downloads/HTML/work.py 
+  908   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 53302 -- /Users/rohanrv/Downloads/HTML/work.py 
+  909  brew install gnupg
+  910  gpg --full-generate-key\n
+  911  gpg --list-secret-keys --keyid-format=long
+  912  git config --global user.signingkey 5968637EF5C74C6F
+  913  git config --global commit.gpgsign true
+  914  gpg --armor --export 5968637EF5C74C6F
+
+
+
+
+
+
+495  which gpg
+  496  git config --global gpg.program $(which gpg)
+  497  git config --global gpg.program
+  498  nano ~/.bash_profile
+  499  source ~/.bash_profile
+  500  git commit -S -m "Initial Project Setup"
+  501  nano ~/.bash_profile
+  502  gpg --list-secret-keys --keyid-format LONG
+  503  git config --global user.signingkey 5968637EF5C74C6F
+  504  git config --global commit.gpgsign true
+  505  git commit -m "Initial Project Setup"
+  506  git commit -S -m "Initial Project Setup"
+  507  echo "use-agent" >> ~/.gnupg/gpg.conf
+  508  echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+  509  gpgconf --kill gpg-agent
+  510  gpgconf --launch gpg-agent
+  511  echo "hello world" | gpg --clearsign
+  512  brew install pinentry-mac
+  513  echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+  514  gpgconf --kill gpg-agent
+  515  echo "hello world" | gpg --clearsign
+  516  git commit -m "#01 Initial Project Setup"
+  517  git history > abc.txt
+  518  history > abc.txt
