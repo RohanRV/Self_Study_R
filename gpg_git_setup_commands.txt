@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=bUoN85QvC10
+
   899   /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52847 -- /Users/rohanrv/Downloads/HTML/num.py 
   900   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52893 -- /Users/rohanrv/Downloads/HTML/num.py 
   901   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52914 -- /Users/rohanrv/Downloads/HTML/num.py 
