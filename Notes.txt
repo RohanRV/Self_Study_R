@@ -4,6 +4,30 @@ dplyr, tidyr, stringr, lubridate, httr, ggvis, ggplot, shiny, rio, rmarkdown
 
 AirPassengers, BJsales, BOD, CO2, ChickWeight, DNase, EuStockMarkets, Formaldehyde, HairEyeColor, Harman23.cor, Harman74.cor, Indometh, InsectSprays, JohnsonJohnson, LakeHuron, LifeCycleSavings, Loblolly, Nile, Orange, OrchardSprays, PlantGrowth, Puromycin, Theoph, Titanic, ToothGrowth, UCBAdmissions, UKDriverDeaths, UKLungDeaths, UKgas, USAccDeaths, USArrests, USJudgeRatings, USPersonalExpenditure, VADeaths, WWWusage, WorldPhones, ability.cov, airmiles, airquality, anscombe. attenu, attitude, austres, beavers, cars, chickwts, co2, crimtab, datasets-package, discoveries, esoph, euro, eurodist, faithful, freeny, gait, infert, iris, islands, lh, longley, lynx, morley, mtcars, nhtemp, nottem, npk, occupationalStatus, penguins, precip, presidents, pressure, quakes, randu, rivers, rock, sleep, stackloss, state, sunspot.month, sunspot.year, sunspots, swiss, treering trees, uspop, volcano, warpbreaks, women
 
+pick    = keep commit as-is
+reword  = change its message
+edit    = modify the contents of the commit
+squash  = combine into the previous one
+drop    = delete this commit
+fixup   = combine & discard message
+
+git config --global --unset user.signingkey
+git config --global --unset commit.gpgsign
+git config --global --list
+cd /path/to/your/RStudioProject
+git config user.signingkey 5968637EF5C74C6F
+git config commit.gpgsign true
+git config --global user.name "Rohan Vaswani"
+git config --global user.email "rv22894@gmail.com"
+cd /path/to/your/netbeans/project
+git remote add origin https://github.com/YourUsername/JavaProjects.git
+git remote -v
+
+mv ~/.netbeans ~/.netbeans_backup\n
+ls ~/Library/Application\ Support/NetBeans\n
+mv ~/Library/Application\ Support/NetBeans ~/Library/Application\ Support/NetBeans_backup\n
+rm -rf ~/Library/Application\ Support/NetBeans\n
+
   899   /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52847 -- /Users/rohanrv/Downloads/HTML/num.py 
   900   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52893 -- /Users/rohanrv/Downloads/HTML/num.py 
   901   cd /Users/rohanrv/Downloads/HTML ; /usr/bin/env /opt/local/bin/python3.10 /Users/rohanrv/.vscode/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 52914 -- /Users/rohanrv/Downloads/HTML/num.py 
