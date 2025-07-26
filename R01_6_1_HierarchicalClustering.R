@@ -9,9 +9,9 @@ pacman::p_load(pacman, tidyverse)
 
 # LOAD DATA ################################################
 ?mtcars
-head(mtcars)
+str(mtcars)
 cars <- mtcars[, c(1:4, 6:7, 9:11)]  # Select variables
-head(cars)
+str(cars)
 
 # COMPUTE AND PLOT CLUSTERS ################################
 # Save hierarchical clustering to "hc." This codes uses

@@ -15,13 +15,13 @@ browseURL("http://j.mp/2aFZUrJ")
 # IMPORTING WITH RIO #######################################
 # CSV
 rio_csv <- import("~/Desktop/mbb.csv")
-head(rio_csv)
+str(rio_csv)
 # TXT
 rio_txt <- import("~/Desktop/mbb.txt")
-head(rio_txt)
+str(rio_txt)
 # Excel XLSX
 rio_xlsx <- import("~/Desktop/mbb.xlsx")
-head(rio_xlsx)
+str(rio_xlsx)
 
 # DATA VIEWER ##############################################
 ?View

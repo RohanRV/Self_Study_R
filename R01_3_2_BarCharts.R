@@ -5,15 +5,15 @@ library(datasets)
 
 # LOAD DATA ################################################
 ?mtcars
-head(mtcars)
+str(mtcars)
 
 # BAR CHARTS ###############################################
+mtcars$cyl                      # Number of cylinders in each car
 barplot(mtcars$cyl)             # Doesn't work
-
-# Need a table with frequencies for each category
-cylinders <- table(mtcars$cyl)  # Create table
+table(mtcars$cyl)               # Create table, it pivots them by frequencies
+cylinders <- table(mtcars$cyl)  # Put it in variable
 barplot(cylinders)              # Bar chart
-plot(cylinders)                 # Default X-Y plot (lines)
+plot(cylinders)                 # Default X-Y plot (lines), much cleaner graph
 
 # CLEAN UP #################################################
 # Clear environment

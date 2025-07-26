@@ -10,7 +10,7 @@ if (!require("pacman")) install.packages("pacman")
 pacman::p_load(pacman, psych) 
 
 # LOAD DATA ################################################
-head(iris)
+str(iris)
 
 # PSYCH PACKAGE ############################################
 # Get info on package

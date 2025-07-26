@@ -4,7 +4,7 @@
 library(datasets)  # Load/unload base packages manually
 
 # LOAD DATA ################################################
-head(iris)
+str(iris)
 
 # ALL DATA #################################################
 hist(iris$Petal.Length)

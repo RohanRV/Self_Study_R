@@ -5,7 +5,7 @@ library(datasets)  # Load/unload base packages manually
 
 # LOAD DATA ################################################
 ?mtcars
-head(mtcars)
+str(mtcars)
 
 # PLOTS ####################################################
 # Good to first check univariate distributions

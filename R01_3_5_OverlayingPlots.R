@@ -6,7 +6,7 @@ library(datasets)  # Load/unload base packages manually
 # LOAD DATA ################################################
 # Annual Canadian Lynx trappings 1821-1934
 ?lynx
-head(lynx)
+str(lynx)
 
 # HISTOGRAM ################################################
 # Default

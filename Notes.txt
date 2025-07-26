@@ -1,3 +1,11 @@
+#01 Initial Project Setup
+#02 Added all GPG Setup Bash Commands to a text file and saved that text file in this project itself for future reference
+#03 Modified the GPG Text file and added Quick Notes file
+#04 Deleted Quick Notes; merged the Quick Notes and GPG; renamed GPG to Notes.
+#05 identified all datasets under dataset apckage, and wrote one-liners about them in Packages.R file. Also listed names of al datasets in Notes.txt for future reference.
+#06 Added Apache NetBeans git commands in Notes file because I wish to maintain a single notes file accross my different languages' projects
+#07 Practiced different data exploration commands in Packages.R like dim(), View(); Replaced all prints in Packages.R with str; Removed a newline from BarCharts.R; Added cex parameter in plot() functioj in Plot.R; Added Comment stack in Notes.txt for future reference; Printed table structure of mtcars$cyl for better imagination; Replaced all print() funcs from majority R files with str()
+
 https://www.youtube.com/watch?v=bUoN85QvC10
 
 dplyr, tidyr, stringr, lubridate, httr, ggvis, ggplot, shiny, rio, rmarkdown

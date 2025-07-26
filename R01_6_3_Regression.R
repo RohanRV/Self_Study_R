@@ -9,7 +9,7 @@ pacman::p_load(pacman, caret, lars, tidyverse)
 
 # LOAD DATA ################################################
 ?USJudgeRatings
-head(USJudgeRatings)
+str(USJudgeRatings)
 data <- USJudgeRatings
 # Define variable groups
 x <- as.matrix(data[, -12])

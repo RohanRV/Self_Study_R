@@ -5,7 +5,7 @@ library(datasets)
 
 # LOAD DATA ################################################
 ?iris
-head(iris)
+str(iris)
 
 # BASIC HISTOGRAMS #########################################
 hist(iris$Sepal.Length)

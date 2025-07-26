@@ -6,6 +6,7 @@ library(datasets)  # Load built-in datasets
 # SUMMARIZE DATA ###########################################
 head(iris)         # Show the first six lines of iris data
 summary(iris)      # Summary statistics for iris data
+str(iris)          # Explains Structure of iris data
 plot(iris)         # Scatterplot matrix for iris data
 
 # CLEAN UP #################################################

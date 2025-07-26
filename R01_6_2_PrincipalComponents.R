@@ -6,9 +6,9 @@ pacman::p_load(pacman, dplyr, GGally, ggplot2, ggthemes, ggvis, httr, lubridate,
 library(datasets)  # Load base packages manually
 
 # LOAD DATA ################################################
-head(mtcars)
+str(mtcars)
 cars <- mtcars[, c(1:4, 6:7, 9:11)]  # Select variables
-head(cars)
+str(cars)
 
 # COMPUTE PCA ##############################################
 # For entire data frame ####################################
