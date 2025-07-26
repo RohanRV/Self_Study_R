@@ -4,7 +4,9 @@
 #04 Deleted Quick Notes; merged the Quick Notes and GPG; renamed GPG to Notes.
 #05 identified all datasets under dataset apckage, and wrote one-liners about them in Packages.R file. Also listed names of al datasets in Notes.txt for future reference.
 #06 Added Apache NetBeans git commands in Notes file because I wish to maintain a single notes file accross my different languages' projects
-#07 Practiced different data exploration commands in Packages.R like dim(), View(); Replaced all prints in Packages.R with str; Removed a newline from BarCharts.R; Added cex parameter in plot() functioj in Plot.R; Added Comment stack in Notes.txt for future reference; Printed table structure of mtcars$cyl for better imagination; Replaced all print() funcs from majority R files with str()
+#07 Trimmed whitespaces off all R files
+#08 Practiced different data exploration commands in Packages.R like dim(), View(); Replaced all prints in Packages.R with str; Removed a newline from BarCharts.R; Added cex parameter in plot() functioj in Plot.R; Added Comment stack in Notes.txt for future reference; Printed table structure of mtcars$cyl for better imagination; Replaced all print() funcs from majority R files with str()
+#09 Studied par() function and within it the mfrow and mfcol parameters in Histogram.R; Added commits #07, #08, #09 in Notes.txt; Removed newlines from Scatterplot.R & Overlaying.R; Added mfrow(2,1) in Overlaying.R to display both simple & compound graphs one below the other
 
 https://www.youtube.com/watch?v=bUoN85QvC10
 
