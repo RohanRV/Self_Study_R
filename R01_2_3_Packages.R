@@ -120,6 +120,8 @@ str(volcano)               # Heights of many 10m squares on Auckland's Maunga Wh
 str(warpbreaks)            # # of warp breaks vs wool type & tension level on string
 str(women)                 # Heights and weights of 15 American women
 
+
+# LEARNING DIFFERENT EXPLORAAORY DATA ANALYSIS FUNCTIONS
 iris
 print(iris)
 head(iris)
@@ -134,6 +136,12 @@ View(iris)
 ls()
 ?ls
 rm(reg1, states, X, Y)
+pacman::p_load(pacman, psych)
+describe(iris)
 
+
+# STANDARD CHOSEN EXPLORATORY DATA ANALYSIS FUNCTIONS TO BE RUN ON ANY NEW GIVEN DATASET
 str(iris)
+pacman::p_load(pacman, psych)
+describe(iris)
 plot(iris, col = "#cc0000", cex = 0.5, pch = 9)
