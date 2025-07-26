@@ -22,7 +22,7 @@ describe(iris)               # Entire data frame
 
 # CLEAN UP #################################################
 # Clear environment
-rm(list = ls()) 
+rm(list = ls())
 # Clear packages
 p_unload(all)  # Remove all add-ons
 detach("package:datasets", unload = TRUE)   # For base

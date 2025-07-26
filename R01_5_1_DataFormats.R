@@ -52,11 +52,13 @@ is.array(a1); is.array(a2)
 
 # Data frame (2D; 2+ vert vect; same len; intrasame but interdiff dtype; cols named)
 vNum  <- c(1, 2, 3); vChar <- c("a", "b", "c"); vLogi <- c(T, F, T) # same length
-df    <- cbind(vNum, vChar, vLogi);                df  # Combo of matrix + array
-dfa   <- as.data.frame(cbind(vNum, vChar, vLogi)); dfa # DF with 3 dtype, cols named
-dfb   <- data.frame(vNum, vChar, vLogi);           dfb # DF with 3 dtype, cols named
-typeof(df); class(df); typeof(dfa); class(dfa); typeof(dfb); class(dfb)
-is.data.frame(df); is.data.frame(dfa); is.data.frame(dfb)
+dfa   <- rbind(vNum, vChar, vLogi);                dfa # Row-wise Matrix
+dfb   <- cbind(vNum, vChar, vLogi);                dfb # Col-wise Matrix
+dfc   <- as.data.frame(cbind(vNum, vChar, vLogi)); dfc # DF with 3 dtype, cols named
+dfd   <- data.frame(vNum, vChar, vLogi);           dfd # DF with 3 dtype, cols named
+typeof(dfa); class(dfa); typeof(dfb); class(dfb)
+typeof(dfc); class(dfc); typeof(dfd); class(dfd)
+is.data.frame(dfa); is.data.frame(dfb); is.data.frame(dfc); is.data.frame(dfd)
 
 # List (1D but can be nested, so nested = 2D+; any len; any data type)
 o1 <- c(1, 2, 3); o2 <- c("a", "b", "c", "d"); o3 <- c(T, F, T, T, F)

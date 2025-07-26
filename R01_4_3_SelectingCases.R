@@ -39,7 +39,7 @@ hist(i.setosa$Petal.Length)
 
 # CLEAN UP #################################################
 # Clear environment
-rm(list = ls()) 
+rm(list = ls())
 # Clear packages
 detach("package:datasets", unload = TRUE)  # For base
 # Clear plots
