@@ -12,6 +12,7 @@ summary(iris$Petal.Length)
 summary(iris$Species)  # Get names and n for each species
 
 # SELECT BY CATEGORY #######################################
+par(mfrow = c(3,1))
 # Versicolor
 hist(iris$Petal.Length[iris$Species == "versicolor"], main = "Petal Length: Versicolor")
 # Virginica
@@ -20,7 +21,7 @@ hist(iris$Petal.Length[iris$Species == "virginica"], main = "Petal Length: Virgi
 hist(iris$Petal.Length[iris$Species == "setosa"], main = "Petal Length: Setosa")
 
 # SELECT BY VALUE ##########################################
-# Short petals only (all Setosa)
+# Short petals only (all Setosa because its petal lenght < 2)
 hist(iris$Petal.Length[iris$Petal.Length < 2], main = "Petal Length < 2")
 
 # MULTIPLE SELECTORS #######################################
@@ -32,7 +33,7 @@ hist(iris$Petal.Length[iris$Species == "virginica" & iris$Petal.Length < 5.5], m
 i.setosa <- iris[iris$Species == "setosa", ]
 
 # EXPLORE SUBSAMPLE ########################################
-head(i.setosa)
+str(i.setosa)
 summary(i.setosa$Petal.Length)
 hist(i.setosa$Petal.Length)
 

@@ -8,6 +8,7 @@
 #08 Practiced different data exploration commands in Packages.R like dim(), View(); Replaced all prints in Packages.R with str; Removed a newline from BarCharts.R; Added cex parameter in plot() functioj in Plot.R; Added Comment stack in Notes.txt for future reference; Printed table structure of mtcars$cyl for better imagination; Replaced all print() funcs from majority R files with str()
 #09 Studied par() function and within it the mfrow and mfcol parameters in Histogram.R; Added commits #07, #08, #09 in Notes.txt; Removed newlines from Scatterplot.R & Overlaying.R; Added mfrow(2,1) in Overlaying.R to display both simple & compound graphs one below the other
 #10 Removed whitespaces from Describe.R; Added commit #10 to Notex.txt; Modified Std Exploratory Data Analysis portion in Packages.R, added psych -> describe();
+#11 Added commit 11 to Notes.txt; Added par(mfrow = 1,1), replaced head() with str(), and articulated commetns in SelectingCases.R & DataFormats.R; Thoroughly Polished DataFormats.R
 
 https://www.youtube.com/watch?v=bUoN85QvC10
 

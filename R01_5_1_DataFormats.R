@@ -1,97 +1,84 @@
 # File:   DataFormats.R; Course: R: An Introduction (with RStudio)
 
-# DATA TYPES ###############################################
+# DATA OBJ = DATA TYPES + DATA STRUCTURES
+# DATA TYPES:- numeric (int, single, double), char, logical, complex, raw
+# DATA STRUCTURES:- vector, matrix, array, data frame, list
+
+
+####################################################################################
+# DATA TYPES #######################################################################
 # Numeric
-n1 <- 15  # Double precision by default
-n1
-typeof(n1)
-n2 <- 1.5
-n2
-typeof(n2)
+n1 <- 1.5; n1; typeof(n1)       # <- means gets; its array of 1 # thus [1] in o/p
+n2 <- 15;  n2; typeof(n2)       # Double by default
+n3 <- 1L;  n3; typeof(n3)       # Integer
+pacman::p_load(float)
+n4 <- fl(1.5); n4; typeof(n4)   # Single or float32, unlike 1.5f in Java or C++
 
 # Character
-c1 <- "c"
-c1
-typeof(c1)
-c2 <- "a string of text"
-c2
-typeof(c2)
+c1 <- "c";                c1; typeof(c1)        # single & double quotes are same
+c2 <- 'a string of text'; c2; typeof(c2)        # string is not a diff dtype in R
 
 # Logical
-l1 <- TRUE
-l1
-typeof(l1)
-l2 <- F
-l2
-typeof(l2)
+l1 <- TRUE; l1; typeof(l1)
+l2 <- F;    l2; typeof(l2)
 
-# DATA STRUCTURES ##########################################
-## Vector ##################################################
-v1 <- c(1, 2, 3, 4, 5)
-v1
-is.vector(v1)
-v2 <- c("a", "b", "c")
-v2
-is.vector(v2)
-v3 <- c(TRUE, TRUE, FALSE, FALSE, TRUE)
-v3
-is.vector(v3)
+# Complex
+c3 <- 1+2i; c3; typeof(c3)                      # i = sqrt(-1)
 
-## Matrix ##################################################
-m1 <- matrix(c(T, T, F, F, T, F), nrow = 2)
-m1
-m2 <- matrix(c("a", "b", "c", "d"), nrow = 2, byrow = T)
-m2
+# Raw
+r1 <- raw(5);                   r1; typeof(r1)  # Raw bytes, not text
+r2 <- as.raw(5);                r2; typeof(r2)
+r3 <- as.raw(c(1, 2, 3, 4, 5)); r3; typeof(r3)
+r4 <- utf8ToInt("abcd");        r4; typeof(r4)  # to ascii (Integer)
+r5 <- charToRaw("abcd");        r5; typeof(r5)  # r4's ascii to hex
 
-## Array ###################################################
-# Give data, then dimemensions (rows, columns, tables)
-a1 <- array(c( 1:24), c(4, 3, 2))
-a1
 
-## Data frame ##############################################
-# Can combine vectors of the same length
-vNumeric   <- c(1, 2, 3)
-vCharacter <- c("a", "b", "c")
-vLogical   <- c(T, F, T)
-dfa <- cbind(vNumeric, vCharacter, vLogical)
-dfa  # Matrix of one data type
-df <- as.data.frame(cbind(vNumeric, vCharacter, vLogical))
-df  # Makes a data frame with three different data types
+####################################################################################
+# DATA STRUCTURES ##################################################################
+# Vector (1D; any len; same dtype; cols not named)
+v1 <- c(1, 2, 3, 4, 5); v1;   is.vector(v1)
+v2 <- c("a", "b", "c"); v2;   is.vector(v2)
+v3 <- c("a", T, F, F, T); v3; is.vector(v3)            # notice conversion of Tto"T"
 
-## List ####################################################
-o1 <- c(1, 2, 3)
-o2 <- c("a", "b", "c", "d")
-o3 <- c(T, F, T, T, F)
-list1 <- list(o1, o2, o3)
-list1
-list2 <- list(o1, o2, o3, list1)  # Lists within lists!
-list2
+# Matrix (2D; same len; same dtype; cols not named)
+m1 <- matrix(c(T, T, F, F, T, F), nrow = 2);        m1 # notice col-wise filling
+m2 <- matrix(c("a", 2, 3, 4), nrow = 2, byrow = T); m2 # notice conversion of 2to"2"
+is.matrix(m1); is.matrix(m2)
 
-# COERCING TYPES ###########################################
-## Automatic coercion ######################################
-# Goes to "least restrictive" data type
-(coerce1 <- c(1, "b", TRUE))
-# coerce1  # Parenthese around command above make this moot
-typeof(coerce1)
-## Coerce numeric to integer ###############################
-(coerce2 <- 5)
-typeof(coerce2)
-(coerce3 <- as.integer(5))
-typeof(coerce3)
-## Coerce character to numeric #############################
-(coerce4 <- c("1", "2", "3"))
-typeof(coerce4)
-(coerce5 <- as.numeric(c("1", "2", "3")))
-typeof(coerce5)
-## Coerce matrix to data frame #############################
-(coerce6 <- matrix(1:9, nrow= 3))
-is.matrix(coerce6)
-(coerce7 <- as.data.frame(matrix(1:9, nrow= 3)))
-is.data.frame(coerce7)
+# Array (3D+; same len; same dtype; cols not named)
+a1 <- array(c( 1:24), c(4, 3, 2));                        a1 # data, dim (r,c,table)
+a2 <- array(c("a", "b", "c", "d", "e", "f"), c(2, 3, 2)); a2 # dupes if insufficient
+is.array(a1); is.array(a2)
 
-# CLEAN UP #################################################
+# Data frame (2D; 2+ vert vect; same len; intrasame but interdiff dtype; cols named)
+vNum  <- c(1, 2, 3); vChar <- c("a", "b", "c"); vLogi <- c(T, F, T) # same length
+df    <- cbind(vNum, vChar, vLogi);                df  # Combo of matrix + array
+dfa   <- as.data.frame(cbind(vNum, vChar, vLogi)); dfa # DF with 3 dtype, cols named
+dfb   <- data.frame(vNum, vChar, vLogi);           dfb # DF with 3 dtype, cols named
+typeof(df); class(df); typeof(dfa); class(dfa); typeof(dfb); class(dfb)
+is.data.frame(df); is.data.frame(dfa); is.data.frame(dfb)
+
+# List (1D but can be nested, so nested = 2D+; any len; any data type)
+o1 <- c(1, 2, 3); o2 <- c("a", "b", "c", "d"); o3 <- c(T, F, T, T, F)
+l1 <- list(o1, o2, o3); l1; typeof(l1); class(l1)       # List of vectors
+l2 <- list(o1, o2, o3, l1); l2; typeof(l2); class(l2)   # Lists within lists
+is.list(l1); is.list(l2)
+
+
+####################################################################################
+# COERCING TYPES (changing data obj from one to another) ###########################
+coerce1 <- c(1, "b", TRUE);                  typeof(coerce1) # broadest dtype
+coerce2 <- 5;                                typeof(coerce2) # Double vector
+coerce3 <- as.integer(5);                    typeof(coerce3) # COERCE double to int
+coerce4 <- c("1", "2", "3");                 typeof(coerce4) # Char vector
+coerce5 <- as.numeric(c("1", "2", "3"));     typeof(coerce5) # COERCE char to double
+coerce6 <- matrix(1:9, nrow = 3);             class(coerce6) # Matrix
+coerce7 <- data.frame(matrix(1:9, nrow = 3)); class(coerce7) # COERCE matrix to DF
+
+
+# CLEAN UP #########################################################################
 # Clear environment
-rm(list = ls()) 
+rm(list = ls())
 # Clear console
 cat("\014")  # ctrl+L
 # Clear mind :)
