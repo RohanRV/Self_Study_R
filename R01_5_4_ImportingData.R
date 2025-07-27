@@ -11,9 +11,9 @@ p_help("http://j.mp/2aFZUrJ", web = F) # From the official R documentation
 
 
 # IMPORTING WITH RIO #######################################
-rio_csv  <- import("Data/mbb.csv"); str(rio_csv)    # CSV
-rio_txt  <- import("Data/mbb.txt"); str(rio_txt)    # TXT
-rio_xlsx <- import("Data/mbb.xlsx"); str(rio_xlsx)  # XLSX
+rio_csv  <- import("Data/mbb.csv");  str(rio_csv)    # CSV
+rio_txt  <- import("Data/mbb.txt");  str(rio_txt)    # TXT
+rio_xlsx <- import("Data/mbb.xlsx"); str(rio_xlsx)   # XLSX
 
 
 # DATA VIEWER ##############################################

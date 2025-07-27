@@ -1,32 +1,22 @@
 # File:    R01_6_2_PrincipalComponents.R; Course:  R: An introduction
 
+# PCA = Dimensionality Reduction (e.g. 2D shadows of 3D ppl; 1D regression line of 2D scatterplot)
+
 # INSTALL AND LOAD PACKAGES ################################
-# Packages I load every time; uses "pacman"
 pacman::p_load(pacman, dplyr, GGally, ggplot2, ggthemes, ggvis, httr, lubridate, plotly, rio, rmarkdown, shiny, stringr, tidyr)
 library(datasets)  # Load base packages manually
 
 # LOAD DATA ################################################
 str(mtcars)
-cars <- mtcars[, c(1:4, 6:7, 9:11)]  # Select variables
-str(cars)
+cars <- mtcars[, c(1:4, 6:7, 9:11)]; str(cars) # Select variables
 
 # COMPUTE PCA ##############################################
-# For entire data frame ####################################
-pc <- prcomp(cars, center = TRUE, scale = TRUE)
-# To specify variables #####################################
-pc <- prcomp(~ mpg + cyl + disp + hp + wt + qsec + am + gear + carb, data = mtcars, center = TRUE, scale = TRUE)
+(pca <- prcomp(cars, center = TRUE, scale = TRUE)) # For entire data frame
+(pca <- prcomp(~ mpg + cyl + disp + hp + wt + qsec + am + gear + carb, data = mtcars, center = TRUE, scale = TRUE)) # specific
 
 # EXAMINE RESULTS ##########################################
-# Get summary stats
-summary(pc)
-# Screeplot for number of components
-plot(pc)
-# Get standard deviations and rotation
-pc
-# See how cases load on PCs
-predict(pc) %>% round(2)
-# Biplot of first two components
-biplot(pc)
+summary(pca); plot(pca)                 # Summary & Plot of PCA
+predict(pca) %>% round(2); biplot(pca)  # See how cases load on PCA
 
 # CLEAN UP #################################################
 # Clear environment

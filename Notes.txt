@@ -11,6 +11,9 @@
 #11 Added commit 11 to Notes.txt; Added par(mfrow = 1,1), replaced head() with str(), and articulated commetns in SelectingCases.R & DataFormats.R; Thoroughly Polished DataFormats.R
 #12 Added commit 12 to Notex.txt; Added rbind() in DF section of DataFormats.R; Thorougly polished Factors.R & EnteringData.R; removed whitespace after rm(list = ls()) in Describe.R, SelectingCases.R, Factors.R, and EnteringData.R; 
 #13 Added commit 13 to Notes.txt; Removed all ? from Packages.R and added full form of PacMan = PackageManager; Cleaned extra comments from TidyVerse.R; renamed ImportingData_Datasets folder to Data; removed whitespace after rm(list = ls()) in Regression.R, PrincipalComponents.R, HierarchicalClustering.R; Thoroughly Polished ImportingData.R
+#14 Added commit 14 to Notes.txt; Thoroughly Polished HierarchicalClustering.R, PrincipalComponent.R, Regression.R; 
+
+https://www.youtube.com/watch?v=bUoN85QvC10
 
 COMPULSORY PACKAGES:-
 base;
@@ -18,12 +21,13 @@ base;
 SEMI-COMPULSORY PACKAGES:-
 methods; utils; stats; grDevices; graphics; 
 
-https://www.youtube.com/watch?v=bUoN85QvC10
-
+GOOD PACKAGES TO BE USED:-
 dplyr, tidyr, stringr, lubridate, httr, ggvis, ggplot, shiny, rio, rmarkdown
 
+ALL DATASETS UNDER DATASETS PACKAGE:-
 AirPassengers, BJsales, BOD, CO2, ChickWeight, DNase, EuStockMarkets, Formaldehyde, HairEyeColor, Harman23.cor, Harman74.cor, Indometh, InsectSprays, JohnsonJohnson, LakeHuron, LifeCycleSavings, Loblolly, Nile, Orange, OrchardSprays, PlantGrowth, Puromycin, Theoph, Titanic, ToothGrowth, UCBAdmissions, UKDriverDeaths, UKLungDeaths, UKgas, USAccDeaths, USArrests, USJudgeRatings, USPersonalExpenditure, VADeaths, WWWusage, WorldPhones, ability.cov, airmiles, airquality, anscombe. attenu, attitude, austres, beavers, cars, chickwts, co2, crimtab, datasets-package, discoveries, esoph, euro, eurodist, faithful, freeny, gait, infert, iris, islands, lh, longley, lynx, morley, mtcars, nhtemp, nottem, npk, occupationalStatus, penguins, precip, presidents, pressure, quakes, randu, rivers, rock, sleep, stackloss, state, sunspot.month, sunspot.year, sunspots, swiss, treering trees, uspop, volcano, warpbreaks, women
 
+# GIT REBASING OPTIONS:-
 pick    = keep commit as-is
 reword  = change its message
 edit    = modify the contents of the commit
