@@ -27,7 +27,7 @@ rect.hclust(hc, k = 5, border = "darkred")
 
 # CLEAN UP #################################################
 # Clear environment
-rm(list = ls()) 
+rm(list = ls())
 # Clear packages
 p_unload(all)  # Remove all add-ons
 detach("package:datasets", unload = TRUE)  # For base

@@ -1,7 +1,7 @@
 # File:   Packages.R; Course: R: An Introduction (with RStudio)
 
 # LOAD PACKAGES ############################################
-# I recommend "pacman". It will install packages, if needed, & then load them.
+# I recommend pacman (Package Manager). It will install packages, if needed, & then load them.
 install.packages("pacman")
 
 # Then load the package by using either of the following:
@@ -127,14 +127,12 @@ print(iris)
 head(iris)
 tail(iris)
 data(iris)
-?data
 names(iris)
 dim(iris)
 str(iris)
 summary(iris)
 View(iris)
 ls()
-?ls
 rm(reg1, states, X, Y)
 pacman::p_load(pacman, psych)
 describe(iris)

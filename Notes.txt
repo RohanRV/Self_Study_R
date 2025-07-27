@@ -10,6 +10,13 @@
 #10 Removed whitespaces from Describe.R; Added commit #10 to Notex.txt; Modified Std Exploratory Data Analysis portion in Packages.R, added psych -> describe();
 #11 Added commit 11 to Notes.txt; Added par(mfrow = 1,1), replaced head() with str(), and articulated commetns in SelectingCases.R & DataFormats.R; Thoroughly Polished DataFormats.R
 #12 Added commit 12 to Notex.txt; Added rbind() in DF section of DataFormats.R; Thorougly polished Factors.R & EnteringData.R; removed whitespace after rm(list = ls()) in Describe.R, SelectingCases.R, Factors.R, and EnteringData.R; 
+#13 Added commit 13 to Notes.txt; Removed all ? from Packages.R and added full form of PacMan = PackageManager; Cleaned extra comments from TidyVerse.R; renamed ImportingData_Datasets folder to Data; removed whitespace after rm(list = ls()) in Regression.R, PrincipalComponents.R, HierarchicalClustering.R; Thoroughly Polished ImportingData.R
+
+COMPULSORY PACKAGES:-
+base;
+
+SEMI-COMPULSORY PACKAGES:-
+methods; utils; stats; grDevices; graphics; 
 
 https://www.youtube.com/watch?v=bUoN85QvC10
 

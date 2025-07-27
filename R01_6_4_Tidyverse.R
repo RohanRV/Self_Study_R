@@ -1,14 +1,11 @@
 # File:   Tidyverse.R; Course: R: An Introduction (with RStudio)
 
 # LOAD PACKAGES ############################################
-install.packages("pacman")
-# Then load the package by using either of the following:
-require(pacman)  # Gives a confirmation message.
-library(pacman)  # No message.
+install.packages("pacman") # Install pacman
+require(pacman)            # Gives a confirmation message.
+library(pacman)            # No message.
 
-# Or, by using "pacman::p_load" you can use the p_load
-# function from pacman without actually loading pacman.
-# These are packages I load every time.
+# Or, by using "pacman::p_load". These are packages I load every time.
 pacman::p_load(pacman, dplyr, GGally, ggplot2, ggthemes, ggvis, httr, lubridate, plotly, rio, rmarkdown, shiny, stringr, tidyr) 
 library(datasets)  # Load/unload base packages manually
 
